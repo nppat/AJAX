@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Weather App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery_functions.js"></script>
+</head>
+<body>
+	<!-- Trying to make these pages responsive using bootstrap from now on.  -->
+	<div class="container-fluid" id="wrapper">
+		<div class="row" id="form_holder">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<form class="transbox">
+					<input type="text" id="city" placeholder="Enter City Name">
+					<input type="submit" id="submit" value="Search Weather">
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div  class="transbox" id="weather_data"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

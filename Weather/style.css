@@ -1,0 +1,35 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body {
+    background: url(berlin_skyline.jpg) no-repeat center fixed; 
+    background-size: cover;
+}
+form {
+	margin: 5% 40% 1% 40%;
+}
+	#city {
+		margin-right: 2%;
+	}
+	#submit, #city {
+		height: 2em;
+		border-radius: 5px;
+	}
+	#submit {
+		width: 9em;
+		background: #f2f2f2;
+	}
+form, #weather_data {
+	text-align: center;
+}
+#weather_data {
+	margin: 0 40%;
+}
+#weather_data.transbox {
+	/*margin: 30px;*/
+    background-color: #ffffff;
+    opacity: 0.7;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
