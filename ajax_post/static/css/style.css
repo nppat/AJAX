@@ -1,0 +1,22 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper {
+	width: 100%;
+	padding: 1% 2%;
+	margin: 0 auto;
+}
+#form_holder, p, h1 {
+	text-align: center;
+}
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
+	.red, .green {
+		font-weight: bolder;
+	}
