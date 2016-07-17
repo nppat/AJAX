@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	width: 100%;
+	padding: 2.5% 5%;
+	font-size: 14px;
+}
+#header, #django_row, #python_row {
+	width: 20%;
+	padding-bottom: 2%;
+	border-bottom: 1px gray solid;
+}
+	#django_row, #add_note, #add_title {
+		padding-top: 1%;
+	}
+	h1 {
+		font-size: 4rem;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	h2, form, button {
+		display: inline-block;
+	}
+	textarea, input {
+		width: 20rem;
+		margin: 2em 1em;
+	}
+	button {
+		width: 6em;
+		height: 2em;
+		border: none;
+		font-size: 1em;
+		font-weight: bolder;
+		background-color: #FFF;
+		color: blue;
+	}
+		.delete {
+			margin-left: 100%;
+		}
+
+section {
+	width: 20%;
+	margin: 1% 2.5%;
+	padding: 0.5%;
+	border: 1px solid #000;
+}
+form, h2, p {
+	display: inline-block;
+}
+#delete_form {
+	margin-left: 14.28em;
+}
