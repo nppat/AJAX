@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Access Control Origin</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+    	$('form').submit(function() {
+	        var url = "https://itunes.apple.com/search?term=";
+	        url += $('#user_input').val();
+	        url += "&entity=musicVideo";
+	        console.log(url)
+	        $.get(url, function(res) {
+	            if(res.results.length !== 0) {
+	                html_string = "<video controls src='" +
+	                               res.results[0].previewUrl +
+	                               "'></video>";
+		  			console.log(html_string);
+		            } else {
+		                html_string = "Not Found";
+		            }
+		            $('#results').html(html_string);
+		    }, 'json');
+		return false;
+	    });
+	});
+	</script>
+</head>
+<body>
+	<h1>Enter Artist's Name:</h1>
+	<form action="/search" method="post">
+	    <label for="user_input">Enter Artists's Name:</label>
+	    <input id="user_input" name="user_input" type="search">
+	    <input type="submit" value="search">
+	</form>
+	<video id="results" controls>
+	</video>
+</body>
+</html>
